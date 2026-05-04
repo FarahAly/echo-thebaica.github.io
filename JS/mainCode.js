@@ -7,10 +7,10 @@ let themebtn;
 window.addEventListener('DOMContentLoaded', () => {
     themebtn = document.getElementById('themeBTN');
 
-    if(localStorage.getItem('themeName') == 'stone'){
+    if(localStorage.getItem('themeName') == 'leaf'){
         themebtn.innerHTML="Theme 2: leaf";
     }else{
-        themebtn.innerHTML="Theme 1: stones";
+        themebtn.innerHTML="Theme 1: stone";
     }
 });
 
