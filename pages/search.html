@@ -32,10 +32,18 @@
                 </ul>
             </nav>
 
-                <div class="search-Bar">
-                <input type="search" id="searchInput" placeholder="search for place">
-                <ul id="results"></ul>
-                </div>
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="search for place ">
+
+    <button id="toggleButton">change display</button>
+
+    <div id="results" class="list-view"></div>
+
+
+    <div id="pagination"></div>
+</div>
+
+<div id="detailsBox" class="hidden"></div>
 
         </section><!--closing father container-->
 
@@ -44,6 +52,8 @@
         </footer>
 
     </main>
+    <!-- jQuery -->
+
     <script src="script.js"></script>
         
     </body>
