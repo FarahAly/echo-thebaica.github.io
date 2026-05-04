@@ -22,14 +22,14 @@ if(localStorage.getItem('themeName') == 'leaf'){
 }
 
 function changeTheme(urlIndex){
-    if(localStorage.getItem('themeName') == 'stone'){
-        document.querySelector('head link[rel="stylesheet"]').setAttribute("href", urlarr[urlIndex+3]);
-        themebtn.innerHTML="Theme 2: leaf";
-        localStorage.setItem('themeName', 'leaf');
-    }else{
+    if(localStorage.getItem('themeName') == 'leaf'){
         document.querySelector('head link[rel="stylesheet"]').setAttribute("href", urlarr[urlIndex]);
         themebtn.innerHTML="Theme 1: stone";
         localStorage.setItem('themeName', 'stone');
+    }else{
+        document.querySelector('head link[rel="stylesheet"]').setAttribute("href", urlarr[urlIndex+3]);
+        themebtn.innerHTML="Theme 2: leaf";
+        localStorage.setItem('themeName', 'leaf');
     }
 }
 
