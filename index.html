@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Echo Thebaica</title>
+    <!-- Font Awesome -->
+    
+    <script src="JS/mainCode.js"></script>
+    <link rel="stylesheet" href="css/theme1/stone.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Discover the top tourist attractions in Egypt, including temples, monuments, and historical places."
+    />
+
+    <style>
+      .imgSuggest, .imgSuggest p, .imgSuggest a, .imgSuggest button{display: none;}
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>Echo Thebaica:</h1>
+      <p>A curated guide to Egypt's timeless wonders</p>
+      <button id="themeBTN" onclick="changeTheme(0)">Theme 1: stones</button>
+    </header>
+
+    <main>
+      <section class="Father-container">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/search.html">Search</a></li>
+            <li><a href="pages/timeTable.html">When & Where</a></li>
+            <li><a href="pages/prices.html">Prices & Updates</a></li>
+            <li><a href="pages/contactUs.html"> Contact Us </a></li>
+            <li><a href="pages/signIn.html">Sign in</a></li>
+          </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <section class="main-content">
+      <div class="welcome">
+            <h1>Welcome to Echo Thebia</h1>
+            <p>Discover the most famous historical landmarks in Egypt</p>
+      </div>
+
+          <!-- images -->
+            <article class="imgSuggest" style="display: block" onmouseenter="showText(0)" onmouseleave="hideText(0)">
+              <button class="previous" onclick="previous(0)">&lt</button>
+              <img src="images/KarnakTemples.jpg" alt="Karnak Temple"/>
+              <p>The largest temple complex in the world located in Luxor.</p>
+              <a href="pages/places/KarnakTemple.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(0)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(1)" onmouseleave="hideText(2)">
+              <button class="previous" onclick="previous(1)">&lt</button>
+              <img src="images/LuxorTemple.jpg" alt="Luxor Temple" />
+              <p>A massive temple built for the worship of Amun-Ra.</p>
+              <a href="pages/places/Luxor.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(1)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(2)" onmouseleave="hideText(2)">
+              <button class="previous" onclick="previous(2)">&lt</button>
+              <img src="images/AbuSimbelTemples.jpg" alt="Abu Simbel" />
+              <p>Famous rock temples built by Ramses II in Aswan.</p>
+              <a href="pages/places/AbuSimble.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(2)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(3)" onmouseleave="hideText(3)">
+              <button class="previous" onclick="previous(3)">&lt</button>
+              <img src="images/ValleyoftheKings.jpg" alt="Valley of the Kings" />
+              <p>Royal tombs of ancient Egyptian pharaohs.</p>
+              <a href="pages/places/ValleyoftheKings.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(3)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(4)" onmouseleave="hideText(4)">
+              <button class="previous" onclick="previous(4)">&lt</button>
+              <img src="images/ValleyoftheQueens.jpg" alt="Valley of the Queens" />
+              <p>Burial site of queens and royal family members.</p>
+              <a href="pages/places/ValleyoftheQueens.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(4)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(5)" onmouseleave="hideText(5)">
+              <button class="previous" onclick="previous(5)">&lt</button>
+              <img src="images/HatshepsutTemple.jpg" alt="Hatshepsut Temple" />
+              <p>A unique temple carved into the mountain.</p>
+              <a href="pages/places/HatshepsutTemple.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(5)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(6)" onmouseleave="hideText(6)">
+              <button class="previous" onclick="previous(6)">&lt</button>
+              <img src="images/PhilaeTemple.jpg" alt="Philae Temple" />
+              <p>A beautiful temple dedicated to goddess Isis.</p>
+              <a href="pages/places/PhilaeTemple.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(6)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(7)" onmouseleave="hideText(7)">
+              <button class="previous" onclick="previous(7)">&lt</button>
+              <img src="images/EdfuTemple.jpg" alt="Edfu Temple" />
+              <p>One of the best preserved temples in Egypt.</p>
+              <a href="pages/places/EdfuTemple.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(7)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(8)" onmouseleave="hideText(8)">
+              <button class="previous" onclick="previous(8)">&lt</button>
+              <img src="images/KomOmboTemple.jpg" alt="Kom Ombo Temple" />
+              <p>A unique double temple for Sobek and Horus.</p>
+              <a href="pages/places/KomOmboTemple.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(8)"> &gt</button>
+            </article>
+
+            <article class="imgSuggest" onmouseenter="showText(9)" onmouseleave="hideText(9)">
+              <button class="previous" onclick="previous(9)">&lt</button>
+              <img src="images/DenderaTemple.jpg" alt="Dendera Temple" />
+              <p>
+                A well-preserved temple dedicated to the goddess Hathor, famous for
+                its astronomical ceiling.
+              </p>
+              <a href="pages/places/DenderaTemple.html" target="_blank">View Details</a>
+              <button class="next" onclick="next(9)"> &gt</button>
+            </article>
+
+
+
+          <!-- Places -->
+          <section class="suggestions">
+
+            <article class="place">
+              <h3>Karnak Temple</h3>
+              <img src="images/KarnakTemples.jpg" alt="Karnak Temple" />
+              <p>The largest temple complex in the world located in Luxor.</p>
+              <a href="pages/places/KarnakTemple.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Luxor Temple</h3>
+              <img src="images/LuxorTemple.jpg" alt="Luxor Temple" />
+              <p>A massive temple built for the worship of Amun-Ra.</p>
+              <a href="pages/places/Luxor.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Abu Simbel</h3>
+              <img src="images/AbuSimbelTemples.jpg" alt="Abu Simbel" />
+              <p>Famous rock temples built by Ramses II in Aswan.</p>
+              <a href="pages/places/AbuSimble.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Valley of the Kings</h3>
+              <img src="images/ValleyoftheKings.jpg" alt="Valley of the Kings" />
+              <p>Royal tombs of ancient Egyptian pharaohs.</p>
+              <a href="pages/places/ValleyoftheKings.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Valley of the Queens</h3>
+              <img src="images/ValleyoftheQueens.jpg" alt="Valley of the Queens" />
+              <p>Burial site of queens and royal family members.</p>
+              <a href="pages/places/ValleyoftheQueens.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Hatshepsut Temple</h3>
+              <img src="images/HatshepsutTemple.jpg" alt="Hatshepsut Temple" />
+              <p>A unique temple carved into the mountain.</p>
+              <a href="pages/places/HatshepsutTemple.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Philae Temple</h3>
+              <img src="images/PhilaeTemple.jpg" alt="Philae Temple" />
+              <p>A beautiful temple dedicated to goddess Isis.</p>
+              <a href="pages/places/PhilaeTemple.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Edfu Temple</h3>
+              <img src="images/EdfuTemple.jpg" alt="Edfu Temple" />
+              <p>One of the best preserved temples in Egypt.</p>
+              <a href="pages/places/EdfuTemple.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Kom Ombo Temple</h3>
+              <img src="images/KomOmboTemple.jpg" alt="Kom Ombo Temple" />
+              <p>A unique double temple for Sobek and Horus.</p>
+              <a href="pages/places/KomOmboTemple.html" target="_blank">View Details</a>
+            </article>
+
+            <article class="place">
+              <h3>Dendera Temple</h3>
+              <img src="images/DenderaTemple.jpg" alt="Dendera Temple" />
+              <p>
+                A well-preserved temple dedicated to the goddess Hathor, famous for
+                its astronomical ceiling.
+              </p>
+              <a href="pages/places/DenderaTemple.html" target="_blank">View Details</a>
+            </article>
+
+          </section>
+
+        </section>
+
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <em>© 2026 Echo Thebaica | All rights preserved</em>
+      </footer>
+
+    </main>
+
+    <script>
+        const articleSuggest = document.querySelectorAll('.imgSuggest');
+        const pSuggest = document.querySelectorAll('.imgSuggest p');
+        const aSuggest = document.querySelectorAll('.imgSuggest a');
+        const nxtSuggest = document.querySelectorAll('.next');
+        const preSuggest = document.querySelectorAll('.previous');
+
+        function showText(number){
+            pSuggest[number].style.display="block";
+            aSuggest[number].style.display="block";
+            nxtSuggest[number].style.display="block";
+            preSuggest[number].style.display="block";
+        }
+        function hideText(number){
+            pSuggest[number].style.display="none";
+            aSuggest[number].style.display="none";
+            nxtSuggest[number].style.display="none";
+            preSuggest[number].style.display="none";
+        }
+        function next(number){
+            articleSuggest[number+1].style.display="block";
+            articleSuggest[number].style.display="none";
+        }
+        function previous(number){
+            articleSuggest[number-1].style.display="block";
+            articleSuggest[number].style.display="none";
+        }
+
+    </script>
+
+  </body>
+</html>
