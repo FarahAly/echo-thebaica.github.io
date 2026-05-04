@@ -2,7 +2,7 @@ const urlarr = [
                 "CSS/theme1/stone.css", "../CSS/theme1/stone.css" , "../../CSS/theme1/stone.css",
                 "CSS/theme2/leaf.css", "../CSS/theme2/leaf.css" , "../../CSS/theme2/leaf.css" 
                ];
-let themebtn
+let themebtn;
 
 window.addEventListener('DOMContentLoaded', () => {
     themebtn = document.getElementById('themeBTN');
