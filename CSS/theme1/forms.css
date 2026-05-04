@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('pattern.png');
+}  
+
+.page-login {
+  width:410px;
+  background-color: transparent;
+  color:rgb(221, 228, 234); 
+  border-radius: 45px;
+  border: 2px solid black;
+  padding: 30px 40px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px black;
+}
+
+.page-login h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.page-login .input-login{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 8px 0 0 0 ;
+    text-align: center;
+}
+
+.input-login input{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(240, 248, 255, 0.414);
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+}
+
+.page-login .input-login :hover{
+    color: aqua;
+}
+
+.input-login input::placeholder{
+    color: aliceblue;
+}
+
+.input-login i{
+    position: absolute;
+    right: 20px;
+    top: 26px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+.page-login .remmber-me{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    margin:  0 15px 15px;
+}
+
+.remmber-me label{
+    accent-color: rgb(173, 62, 62);
+    margin-right: 3px;
+    color: cadetblue;
+}
+
+.remmber-me a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.remmber-me a:hover{
+    text-decoration:underline;
+    color: blueviolet;
+}
+
+.page-login .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.381);
+    cursor:pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.page-login .btn:hover{
+    color: blueviolet;
+    background-color: yellowgreen;
+}
+
+.page-login .Register{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px ;
+    color: slateblue;
+}
+
+.Register p a {
+    color: rgb(253, 254, 254);
+    text-decoration: none;
+}
+
+.Register a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
