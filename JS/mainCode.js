@@ -28,7 +28,7 @@ function changeTheme(urlIndex){
         localStorage.setItem('themeName', 'leaf');
     }else{
         document.querySelector('head link[rel="stylesheet"]').setAttribute("href", urlarr[urlIndex]);
-        themebtn.innerHTML="Theme 1: stones";
+        themebtn.innerHTML="Theme 1: stone";
         localStorage.setItem('themeName', 'stone');
     }
 }
