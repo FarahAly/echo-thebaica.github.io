@@ -19,21 +19,7 @@ body:not(.containsForms, #hasMap){
 .containsForms{
     background: url('pattern.png');
 }
-#hasMap{
-    display:flex;
-    justify-content: center;
-}
-#hasMap div{
-    padding: 10px;
-    border-radius: 16px;
-    transition: transform 0.2s;
-}
-#hasMap div:hover{
-    transform: scale(1.4,1.4);
-}
-#hasMap h3{
-    margin-top: 0;
-}
+
 /*---------------------------------------------------- important stuff ------------------*/
 header p, header h1{display: inline; padding: 0.6rem;}
 
