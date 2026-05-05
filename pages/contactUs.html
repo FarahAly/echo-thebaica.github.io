@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Font Awesome icons↓-->
+    <link rel="stylesheet" href="../CSS/theme2/leaf.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Echo Thebaica</title>
+    <meta charset="UTF-8" />
+    <meta name="description"
+        content="Discover the top tourist attractions in Egypt, including temples, monuments, and historical places." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script> const urlIndex = 1;</script>
+        <script src="../JS/mainCode.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-h1">Echo Thebaica:</h1>
+        <p>A curated guide to Egypt's timeless wonders</p>
+        <button id="themeBTN" onclick="changeTheme(1)">Theme 1: stones</button>
+    </header>
+    <main>
+        <section class="Father-container">
+            <nav class="sidebar" id="contact-sidebar">
+                <ul>
+                    <li> <a href="../index.html">Home</a> </li>
+                    <li> <a href="gallery.html">Gallery</a> </li>
+                    <li> <a href="search.html">Search</a> </li>
+                    <li> <a href="timeTable.html">When & Where</a> </li>
+                    <li> <a href="prices.html">Prices & Updates</a> </li>
+                    <li> <a href="contactUs.html">Contact US</a> </li>
+                    <li><a href="signIn.html">Sign in</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-content">
+                <section class="contact-main">
+
+                    <div class="contact-info">
+                        <h2>Contact with us</h2>
+                        <p>We are here to answer your questions at any time,<br>Contact us through:</p>
+                        <div class="information-item">
+                            <span>📍 Address: Cairo, Egypt</span>
+                        </div>
+                        <div class="information-item">
+                            <span>📞 Phone: 01129131003</span>
+                        </div>
+                        <p> Or send mail directly: </p>
+                        <div class="information-item">
+                            <a href="mailto:echothebaica@gmail.com" class="direct-email">
+                                echothebaica@gmail.com </a><br>
+                            <a href="mailto:omarapoalmgdemail@gmail.com" class="direct-email">
+                                omarapoalmgdemail@gmail.com</a><br>
+                            <a href="mailto:fm5959843@gmail.com" class="direct-email">
+                                fm5959843@gmail.com</a><br>
+                            <a href="mailto:farahalyhussain@gmail.com" class="direct-email">
+                                farahalyhussain@gmail.com</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>
+                            Got a problem? Tell us by filling this form: 👇
+                        </h3>
+                        <form>
+                            <div class="input-login">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Input your name" required />
+                            </div>
+
+                            <div class="input-login">
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="example@gmail.com" required />
+                                <p id="msg"></p>
+                            </div>
+
+                            <div class="selection">
+                                <label for="subject">Reason for communication</label>
+                                <select id="subject" name="subject">
+                                    <ul>
+                                        <li>
+                                            <option value="general">General inquiry</option>
+                                        </li>
+                                        <li>
+                                            <option value="feedback">Your opinion (Feedback)</option>
+                                        </li>
+                                        <li>
+                                            <option value="support">Technical support</option>
+                                        </li>
+                                    </ul>
+                                </select>
+                            </div>
+
+                            <div class="issues">
+                                <label for="message">Your message:</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
+                            </div>
+
+                            <button type="button" class="submit-btn" onclick="validateForm()">Send Message</button>
+
+                        </form>
+                    </div>
+                </section>
+                <script>
+                    function validateForm() {
+                        var email = document.getElementById('email').value.trim();
+                        var name = document.getElementById('name').value.trim();
+                        var message= document.getElementById('message').value.trim();
+                        var msgBox = document.getElementById('msg');
+                        var btn = document.getElementById('submitBtn');
+                        if (name == "") {
+                            msgBox.innerHTML = " Please enter your name!";
+                            msgBox.style.color = "red";
+                        }
+                        else if (email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+                            msgBox.innerHTML = "Error: Invalid Email";
+                            msgBox.style.color = "red";
+                        }
+                        else if (message ==""){
+                            msgBox.innerHTML ="Please write your message!";
+                            msgBox.style.color = "red";
+                        }
+                        else{
+                            msgBox.innerHTML = "succesfullYY";
+                            msgBox.style.color ="green";
+                            document.querySelector("form").reset();
+                        }
+                        
+                    }
+                </script>
+                <!--محتوي الصفحة و ده الي بنغير فيه بس-->
+            </section><!--closing main content-->
+        </section><!--Closing Father container-->
+        <footer>
+            <em>© 2026 Echo Thebaica | All rights preserved</em>
+        </footer>
+    </main>
+</body>
+
+</html>

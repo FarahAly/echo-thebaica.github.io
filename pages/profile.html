@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Echo Thebaica</title>
+
+    <link rel="stylesheet" href="../css/theme1/stone.css">
+    <script> const urlIndex = 1;</script>
+    <script src="../JS/mainCode.js"></script>
+
+</head>
+<body class="profile-body">
+    <header>
+        <h1 class="header-h1">Echo Thebaica:</h1>
+        <p>A curated guide to Egypt's timeless wonders</p>
+        <button id="themeBTN" onclick="changeTheme(1)">Theme 1: stones</button>
+    </header>
+    <main>
+        <section class="Father-container">
+            <nav class="sidebar">
+                <ul>
+                    <li> <a href="../index.html">Home</a> </li>
+                    <li> <a href="gallery.html">Gallery</a> </li>
+                    <li> <a href="search.html">Search</a> </li>
+                    <li> <a href="timeTable.html">When & Where</a> </li>
+                    <li> <a href="prices.html">Prices & Updates</a> </li>
+                    <li> <a href="contactUs.html">Contact US</a> </li>
+                    <li> <a href="signIn.html">Sign in</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-content">
+
+        <div class="user-data">
+            <h2> Profile </h2>
+            <div class="user">
+                <h3> username: </h3>
+                <p id="username"></p>
+            </div>
+
+            <div class="input-reg">
+                <h3> email: </h3>
+                <p id="email"></p>
+            </div>
+
+            <div class="password-reg">
+                <h3> password: </h3>
+                <p id="password"></p>
+            </div>
+
+            <div class="phone">
+                <h3> telephone: </h3>
+                <p id="telephone"></p>
+            </div>
+            
+            <div class="gender-details">
+                <h3> gender: </h3>
+                <p id="gender"></p>
+            </div>
+
+        </div><!--closing user-data-->
+
+    </section><!--closing main content-->
+    
+    <script defer>
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const telephone = document.getElementById('telephone');
+        const gender= document.getElementById('gender');
+
+        username.innerHTML = localStorage.getItem("username");
+        email.innerHTML = localStorage.getItem("email");
+        password.innerHTML = localStorage.getItem("password");
+        telephone.innerHTML = localStorage.getItem("telephone");
+        gender.innerHTML= localStorage.getItem("Gender");
+    </script>
+
+            </section><!--closing main content-->
+        </section><!--Closing Father container-->
+
+        <footer>
+            <em>© 2026 Echo Thebaica | All rights preserved</em>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Echo Thebaica</title>
+
+        <!--Font Awesome icons↓-->
+
+        <link rel="stylesheet" href="../CSS/theme1/stone.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script> const urlIndex = 1;</script>
+        <script src="../JS/mainCode.js"></script>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta  name="description"
+            content="Discover the top tourist attractions in Egypt, including temples, monuments, and historical places."
+        />
+        <style>
+            #results {
+                animation: fadeIn 0.2s ease-in-out;
+            }
+            #results.details-view p{display: block;}
+            #results.grid-view p, #results.list-view p{display: none;}
+            #results.list-view div , results .details-view div{
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+                cursor: pointer;
+            }
+         
+            #results.grid-view {
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 10px;
+            }
+
+            #results.grid-view div {
+                border: 1px solid #ccc;
+                padding: 10px;
+            }
+
+            #pagination button {
+                margin: 5px;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            #detailsBox {
+                border: 2px solid #000;
+                padding: 15px;
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Echo Thebaica:</h1>
+            <p>A curated guide to Egypt's timeless wonders</p>
+            <button id="themeBTN" onclick="changeTheme(1)">Theme 1: stones</button>
+        </header>
+        <main>
+
+        <section class="Father-container">
+
+            <nav class="sidebar">
+                <ul>
+                    <li> <a href="../index.html">Home</a> </li>
+                    <li> <a href="gallery.html">Gallery</a> </li>
+                    <li> <a href="search.html">Search</a> </li>
+                    <li> <a href="timeTable.html">When & Where</a> </li>
+                    <li> <a href="prices.html">Prices & Updates</a> </li>
+                    <li> <a href="contactUs.html">Contact Us</a> </li>
+                    <li> <a href="signIn.html">Sign in</a> </li>
+                </ul>
+            </nav>
+          <section class="main-content">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="search for place ">
+
+                <button id="toggleButton">change display</button>
+
+                <div id="results" class="list-view"></div>
+
+
+                <div id="pagination"></div>
+            </div>
+          
+            <div id="detailsBox" class="hidden"></div>
+
+        </section><!--closing main-content-->
+        </section><!--closing father container-->
+        <footer>
+                <em>© 2026 Echo Thebaica | All rights preserved</em>
+        </footer>
+
+    </main>
+    <!-- jQuery -->
+
+    <script src="../JS/search.js"></script>
+        
+    </body>
+</html>
