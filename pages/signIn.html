@@ -43,7 +43,7 @@
         function check(){
             if(user.value=="" || pass.value==""){
                 conf.innerHTML = "please enter all fields";
-            }else if(localStorage.getItem("username") !== user.value || localStorage.getItem("password") !== password.value){
+            }else if(localStorage.getItem("username") !== user.value || localStorage.getItem("password") !== pass.value){
                 conf.innerHTML = "invalid input";
             }else{window.open("profile.html")}
         }
