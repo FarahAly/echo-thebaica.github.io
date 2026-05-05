@@ -26,6 +26,7 @@ function send(){
         localStorage.setItem("password", pass.value);
         localStorage.setItem("telephone", telephone.value);
         localStorage.setItem("Gender", selectedaGender.value);
+        window.open("signIn.html");
     }
 }
 
