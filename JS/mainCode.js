@@ -32,4 +32,3 @@ function changeTheme(urlIndex){
         localStorage.setItem('themeName', 'leaf');
     }
 }
-

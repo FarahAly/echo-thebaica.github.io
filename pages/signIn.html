@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/theme1/stone.css">
+
+</head>
+<body class="containsForms">
+    <form action="">
+        <h1>SIGN IN</h1>
+
+        <div class="input-login">
+            <label for="user"> username: </label>
+            <input type="text" placeholder="username" id="user" name="user">
+            <i class='bx bx-user-circle'></i>
+        </div>
+
+        <div class="input-login">
+            <label for="pass"> password: </label>
+            <input type="password" placeholder="password" id="pass" name="pass">
+            <i class='bx bx-lock-open'></i>
+        </div>
+
+        <div class="remember-me">
+            <label><input type="checkbox">remember me</label>
+            <a href="#">forget password?</a>
+        </div>
+        <div id="confirm">  </div>
+        <button type="button" class="btn" onclick="check()">submit</button>
+
+        <div class="Register">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </div>
+    </form>
+    <script>
+        const user = document.getElementById("user");
+        const pass = document.getElementById("pass");
+        const conf = document.getElementById("confirm");
+
+        function check(){
+            if(user.value=="" || pass.value==""){
+                conf.innerHTML = "please enter all fields";
+            }else if(localStorage.getItem("username") !== "user.value" || localStorage.getItem("password") !== "password.value"){
+                conf.innerHTML = "invalid input";
+            }else{window.open("profile.html")}
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

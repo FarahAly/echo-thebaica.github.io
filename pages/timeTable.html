@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Font Awesome icons↓-->
+        <link rel="stylesheet" href="../CSS/theme1/stone.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Echo Thebaica</title>
+        <meta charset="UTF-8" />
+        <meta  name="description"
+            content="Discover the top tourist attractions in Egypt, including temples, monuments, and historical places."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+    <body>
+        <header>
+            <h1>Echo Thebaica:</h1>
+            <p>A curated guide to Egypt's timeless wonders</p>
+            <button id="themeBTN" onclick="changeTheme(1)">Theme 1: stones</button>
+        </header>
+        <main>
+        <section class="Father-container">
+            <nav class="sidebar">
+                <ul>
+                  <li> <a href="../index.html">Home</a> </li>
+                  <li> <a href="gallery.html">Gallery</a> </li>
+                  <li> <a href="search.html">Search</a> </li>
+                  <li> <a href="timeTable.html">When & Where</a> </li>
+                  <li> <a href="prices.html">Prices & Updates</a> </li>
+                  <li> <a href="contactUs.html">Contact US</a> </li>
+                  <li><a href="signIn.html">Sign in</a></li>
+                </ul>
+            </nav>
+        
+            <section class="main-content">
+              <article>
+                <h1 class="timetable-h1"> Heritage of the Nile 🏺 | Archaeological Landmarks timetable and locations<br>
+                    <span>Egyptian sites & museums — curated from official guide</span>
+                </h1>
+                    <table class="timetable">
+                    <thead><!--all <th> in one place-->
+                        <tr>
+                            <th>🏛️ Tourist landmark</th>
+                            <th>⏱️ Work hours (general schedule)</th>
+                            <th>📍 Where (location)</th>
+                            <th>🗺️ Show location on Map</th>
+                            </tr>
+                    </thead>
+                    <tbody><!--all <td> in one place-->
+
+                        <tr><td class="landmark">Karnak Temple Complex (Thebes)</td><td class="hours">Daily 6:00 – 17:30 (winter) / 6:00 – 18:00 (summer)</td><td class="location">East Bank, Luxor, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/WEp1GNpiTduJNLBQ6', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr><td class="landmark">Luxor Temple</td><td class="hours">Daily 6:00 – 22:00 (light show until 20:00)</td><td class="location">Corniche El Nile, East Bank, Luxor, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/ysdwLu34c3QaiTsw8', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Abu Simbel Temples (Great & Small)</td><td class="hours">Daily 7:00 – 17:00 (winter) / 6:00 – 18:00 (summer)</td><td class="location">Abu Simbel, Aswan Governorate (near Sudanese border), Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/adqmRHtzpnVQdTS67', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Valley of the Kings</td><td class="hours">Daily 6:00 – 17:00 (entry stops ~16:00)</td><td class="location">West Bank, Luxor, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/fMeTtSprWAk2MTac7','_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Valley of the Queens</td><td class="hours">Daily 6:00 – 17:00</td><td class="location">West Bank, Luxor, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/DxUyuwrbQqurjhL86', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Deir el-Bahari (Hatshepsut Temple)</td><td class="hours">Daily 6:00 – 17:00 (extended in summer)</td><td class="location">Deir el-Bahari, West Bank, Luxor, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/MbLwVVQhonTjfYBx6', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Philae Temple (Temple of Isis)</td><td class="hours">Daily 7:00 – 16:30 (winter) / 7:00 – 17:30 (summer); sound & light evenings</td><td class="location">Agilkia Island, Aswan, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/HSGRygaHF3CjL4VK7', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Temple of Edfu (Temple of Horus)</td><td class="hours">Daily 7:00 – 16:30 (winter) / 7:00 – 17:30 (summer)</td><td class="location">Edfu, Aswan Governorate (between Luxor and Aswan), Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/QLD4vQvwmQ7615qX6', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Kom Ombo Temple (Double Temple)</td><td class="hours">Daily 7:00 – 16:30 (winter) / 7:00 – 17:30 (summer)</td><td class="location">Kom Ombo, Aswan Governorate, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/heG2oZ1iRXnUyXGE9', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Dendera Temple Complex (Hathor Temple)</td><td class="hours">Daily 7:00 – 17:00</td><td class="location">Qena Governorate (approx. 60 km north of Luxor), Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/BkFoBXbFckWS2wpP9', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Abydos Temple (Seti I Temple)</td><td class="hours">Daily 7:00 – 17:00</td><td class="location">Abydos, Sohag Governorate, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/KqF39SdWZ1nfmt9EA', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Step Pyramid of Djoser (Saqqara)</td><td class="hours">Daily 8:00 – 17:00 (winter) / 8:00 – 18:00 (summer)</td><td class="location">Saqqara Archaeological Area, Giza Governorate, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/dnias4KFhsFW9ZNVA', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Dahshur Pyramids (Bent & Red Pyramids)</td><td class="hours">Daily 8:00 – 17:00</td><td class="location">Dahshur, Giza Governorate, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/yaiEAmZhA6yf5nHKA', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Medinet Habu (Mortuary Temple of Ramesses III)</td><td class="hours">Daily 6:00 – 17:00</td><td class="location">West Bank, Luxor, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/5UwD3R5u5dex5H1JA', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Colossi of Memnon</td><td class="hours">Open site, accessible 24h (free area)</td><td class="location">West Bank, Luxor, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/KBytJgNKzpz5eR92A', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Beni Hassan Tombs</td><td class="hours">Daily 8:00 – 16:00</td><td class="location">Beni Hassan village, Abu Qirqas, Minya Governorate, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/HjYDpXg72jCWur5c9', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Tell el-Amarna (Akhetaten)</td><td class="hours">Daily 8:00 – 16:00 (remote, may close earlier)</td><td class="location">Minya Governorate (east bank of the Nile), Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/NyTSY2mAYfYwULJ66', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Grand Egyptian Museum (GEM) – Giza</td><td class="hours">Daily 9:00 – 18:00 (hours extend gradually; check official)</td><td class="location">Giza Plateau, beside Giza Pyramids, Giza, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/hLMrnCZ8mhmHWT3y9', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">National Museum of Egyptian Civilization (NMEC)</td><td class="hours">Daily 9:00 – 17:00 (Friday 9:00 – 17:00)</td><td class="location">Al Fustat, Cairo, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/KpPmcvsGXKhws9jK6', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Egyptian Museum (Tahrir)</td><td class="hours">Daily 9:00 – 17:00</td><td class="location">Tahrir Square, Cairo, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/DmDmoseo8CaM4QYh9', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Museum of Islamic Art – Bab al-Khalq</td><td class="hours">Daily 9:00 – 17:00 (Friday 9:00 – 11:30 & 13:30 – 17:00)</td><td class="location">Ahmed Maher Square, Bab al-Khalq, Cairo, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/8bNEPo6LNimCQBtC8', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Coptic Museum – Old Cairo</td><td class="hours">Daily 9:00 – 17:00</td><td class="location">Complex of Religions, Old Cairo (near Babylon Fortress), Cairo, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/pjAiCWeGTJWfK9Ar6', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Imhotep Museum – Saqqara</td><td class="hours">Daily 8:00 – 17:00 (winter) / 8:00 – 18:00 (summer)</td><td class="location">Saqqara Archaeological Site, Giza Governorate, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/99fFhszLepomsJQh9', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                        <tr><td class="landmark">Manial Palace Museum (Prince Mohamed Ali Palace)</td><td class="hours">Daily 9:00 – 16:00 (winter) / 9:00 – 17:00 (summer)</td><td class="location">Manial Island, El-Rodah, Cairo, Egypt</td>
+                            <td><button onclick="window.open('https://maps.app.goo.gl/JSmT6Mf5XxdccQ7w6', '_blank')">
+                                <!--Calling function with arguments fit for the place-->
+                                <i class="fas fa-map-marker-alt"></i>
+                                <!--icon shows as button instead of text-->
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                <div class="note">
+                    🕰️ <strong>Note about working hours:</strong> Timings may change during Ramadan, public holidays, or due to seasonal shifts. Always confirm locally before visiting.<br>
+                    🎟️ Many sites have separate night shows or extended summer schedules.
+                </div>
+              </article>
+              <article>
+                  <h2> View the map </h2>
+                  <iframe src="map.html" width="893px"></iframe>
+              </article>
+            </section><!--closing main content-->
+        </section><!--Closing Father container-->
+        <footer>
+             <em>© 2026 Echo Thebaica | All rights preserved</em>
+        </footer>
+    </main>
+        
+        <script src="../JS/mainCode.js"></script>
+    </body>
+</html>

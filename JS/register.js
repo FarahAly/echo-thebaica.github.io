@@ -1,60 +1,31 @@
-const form = document.getElementById('form')
-const user = document.getElementsByClassName('user')
-const input_reg = document.getElementsByClassName('input-reg')
-const password_reg = document.getElementsByClassName('password-reg')
-const ck_pass = document.getElementsByClassName('ck-pass')
-const phone = document.getElementsByClassName('phone')
-const error_message = document.getElementById('error_message')
+const username = document.getElementById('username');
+const email = document.getElementById('email');
+const pass = document.getElementById('pass');
+const passConf = document.getElementById('passConf');
+const telephone = document.getElementById('telephone');
 
-form.addEventListener('submit',(e)=> {
-    e.preventDefault()
-    let errors=[]
-    if(user){
-        errors = getRegisterFormErrors(user.value, input_reg.value, password_reg.value, ck_pass.value, phone.value)
-    }
-    else{
-        errors = getSigninFormErrors(input_reg.value, password_reg.value)
-    }
-    if(errors.length >0){
-        e.preventDefault()
-        error_message.innerText = errors.join(". ")
-    }
-})
+const confirm = document.getElementById('confirm');
 
+function send(){
+    let selectedaGender = document.querySelector('input[name="gender"]:checked');
 
-function getRegisterFormErrors(user ,input_reg, password, ck_pass,phone){
-    let errors=[]
+    if(username.value==""||email.value==""||pass.value==""||passConf.value==""||telephone.value==""||!selectedaGender)
+    {
+        confirm.innerHTML = "please fill all fields";
+    }else if(email.value.indexOf('@') === -1 || email.value.indexOf('.') === -1){
+        confirm.innerHTML = "invalid email";
+    }else if(pass.value !== passConf.value){
+        confirm.innerHTML = "passwords don't match!";
+    }else if(/^\d+$/.test(telephone.value) === false){
+        confirm.innerHTML = "invalid phone number";
+    }else{
+        confirm.innerHTML = "Done!";
 
-    if(user === '' || user == null){
-        errors.push('user is required')
-        user.parentElement.classList.add('incorrect')
+        localStorage.setItem("username", username.value);
+        localStorage.setItem("email", email.value);
+        localStorage.setItem("password", pass.value);
+        localStorage.setItem("telephone", telephone.value);
+        localStorage.setItem("Gender", selectedaGender.value);
     }
-    if(input_reg === '' || input_reg == null){
-        errors.push('email is required')
-        input_reg.parentElement.classList.add('incorrect')
-    }
-    if(password === '' || password == null){
-        errors.push('password is required')
-        password.parentElement.classList.add('incorrect')
-    }
-   
-    if(phone === '' || phone == null){
-        errors.push('phone number is required')
-        phone.parentElement.classList.add('incorrect')
-    }
-    if(password !== ck_pass){
-        errors.push('password does not match')
-        password.parentElement.classList.add('incorrect')
-        ck_pass.parentElement.classList.add('incorrect')
-    }
-    return errors;
 }
 
-const allinputs = [user, input_reg, password_reg, ck_pass, phone]
-allinputs.forEach(input =>  {
-        if(input.parentElement.classList.contains('incorrect')){
-            input.parentElement.classList.remove('incorrect')
-            error_message.innerText =''
-            
-        }
-    })
