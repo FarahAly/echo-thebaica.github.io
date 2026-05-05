@@ -661,6 +661,13 @@ form{
         background-color: #165825;
         transform: translateX(7px) scale(1.05);
     }
+#message{
+    color:rgb(4, 41, 9);
+    padding: 20px;
+    font-size: 120%;
+    background-color: rgba(236, 229, 205, 0.9);
+    border-radius: 20px;
+}
 
 /*Places stylings*/
 
