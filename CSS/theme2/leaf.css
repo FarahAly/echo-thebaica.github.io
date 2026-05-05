@@ -661,7 +661,7 @@ form{
         background-color: #165825;
         transform: translateX(7px) scale(1.05);
     }
-#message{
+.issues #message{
     color:rgb(4, 41, 9);
     padding: 20px;
     font-size: 120%;
