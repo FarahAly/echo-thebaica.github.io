@@ -307,7 +307,7 @@ figcaption{
     justify-content: center; 
 }
 #results.grid-view {
-    /* overflow: scroll; */
+    overflow: scroll;
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
