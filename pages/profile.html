@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>register</title>
+
+    <link rel="stylesheet" href="../css/theme1/stone.css">
+
+    <script> const urlIndex = 1;</script>
+    <script src="../JS/mainCode.js"></script>
+
+</head>
+<body>
+    <button id="themeBTN" onclick="changeTheme(1)">Theme 1: stone</button>
+    <div class="main-content">
+            <div class="user">
+                <h3> username: </h3>
+                <p id="username"></p>
+            </div>
+
+            <div class="input-reg">
+                <h3> email: </h3>
+                <p id="email"></p>
+            </div>
+
+            <div class="password-reg">
+                <h3> password: </h3>
+                <p id="password"></p>
+            </div>
+
+            <div class="phone">
+                <h3> telephone: </h3>
+                <p id="telephone"></p>
+            </div>
+            
+            <div class="gender-details">
+                <h3> gender: </h3>
+                <p id="gender"></p>
+            </div>
+
+    </div>
+    <script defer>
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const telephone = document.getElementById('telephone');
+        const gender= document.getElementById('gender');
+
+        username.innerHTML = localStorage.getItem("username");
+        email.innerHTML = localStorage.getItem("email");
+        password.innerHTML = localStorage.getItem("password");
+        telephone.innerHTML = localStorage.getItem("telephone");
+        gender.innerHTML= localStorage.getItem("Gender");
+    </script>
+
+
+</body>
+</html>
