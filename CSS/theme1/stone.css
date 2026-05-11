@@ -157,6 +157,8 @@ textarea{
     cursor: pointer;
 }
 
+#confirm{margin: 1.5rem;}
+
 .btn{
     font-size: 1.1em;
     font-weight: 600;
