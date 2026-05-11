@@ -113,20 +113,23 @@
                         var btn = document.getElementById('submitBtn');
                         if (name == "") {
                             msgBox.innerHTML = " Please enter your name!";
-                            msgBox.style.color = "red";
+                            msgBox.style.color = "rgb(110, 1, 1)";
+                            msgBox.style.background = "rgba(255, 255, 255, 0.8)";
                         }
                         else if (email.indexOf('@') == -1 || email.indexOf('.') == -1) {
                             msgBox.innerHTML = "Error: Invalid Email";
-                            msgBox.style.color = "red";
+                            msgBox.style.color = "rgb(110, 1, 1)";
+                            msgBox.style.background = "rgba(255, 255, 255, 0.8)";
                         }
                         else if (message ==""){
                             msgBox.innerHTML ="Please write your message!";
-                            msgBox.style.color = "red";
+                            msgBox.style.color = "rgb(110, 1, 1)";
+                            msgBox.style.background = "rgba(255, 255, 255, 0.8)";
                         }
                         else{
                             msgBox.innerHTML = "Your message has been sent succesfully";
                             msgBox.style.color =" #0d2c0d";
-                            msgBox.style.background ="rgba(255, 255, 255, 0.6)";
+                            msgBox.style.background ="rgba(255, 255, 255, 0.8)";
                             document.querySelector("form").reset();
                         }
                         
