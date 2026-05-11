@@ -57,7 +57,7 @@ const toggleButton = document.getElementById("toggleButton");
 const detailsBox = document.getElementById("detailsBox");
 
 let currentPage = 1;
-const itemsPerPage = 3;
+const itemsPerPage = 4;
 let currentResults = [];
 
 
