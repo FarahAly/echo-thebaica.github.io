@@ -90,6 +90,7 @@ form h1{
     transition: transform 0.2s;
 }
 .page-reg input{width: calc(100% - 1.5rem)}
+.gender-details{background-color: rgba(255, 234, 184, 0.5); border-radius: 16px;}
 .category{
     font-size: 3rem;
 }
