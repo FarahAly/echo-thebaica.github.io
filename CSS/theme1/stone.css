@@ -467,7 +467,7 @@ form h1{
     border: 2px solid var(--shade);
 }
 .selection{margin: 0.6rem 0;}
-select, option{
+select{
     font-size: 0.7em;
     width: 11rem;
     color: var(--shade);
