@@ -221,11 +221,9 @@ nav , footer{
     transform: translateX(0);
 }
 
-#results.grid-view{
-    border-radius : 16px; 
-}
 #results{
     margin-bottom: 0.6rem;
+    border-radius: 16px;
 }
 
 p:not(.contact-info p, header p, .galleryParent p, .suggestions p, .imgSuggest p){
