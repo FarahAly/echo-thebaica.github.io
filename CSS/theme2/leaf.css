@@ -55,18 +55,6 @@ h2{
     text-shadow: 0px 0px 0px #725e28;
 }
 
-.welcome{
-    border-radius: 2px 20px 2px 20px;
-    background-color: rgba(133, 97, 9, 0.2);
-    padding: 3px;
-}
-.welcome h1, .welcome p{
-    font-family: Calisto MT;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-    color: #5c491a;
-}
 p{
     margin: 20px;
     padding: 10px;
@@ -177,6 +165,14 @@ footer{
 }
 
 /*______Registration_&&_Sign_In______*/
+#confirm{
+    margin: 20px;
+    background: rgba(199, 176, 112, 0.74);
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(2, 51, 15);
+    font-weight: 600;
+}
 .page-reg{
     width: 80%;
     height: 50%;
@@ -212,12 +208,12 @@ footer{
 .remember-me, .Register{
     padding: 5px;
     margin: 5px;
-    background-color: rgba(255, 255, 255, 0.342);
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 2px 20px;
 }
 .remember-me a:link, .Register a:link{
     color: rgb(250, 250, 250);
-    background-color: rgba(6, 59, 15, 0.63);
+    background-color: rgba(6, 59, 15, 0.7);
     padding: 5px;
     border-radius: 20px;
     transition: 0.5s;
@@ -226,7 +222,8 @@ footer{
     background-color: #042209;
 }
 .remember-me a:visited, .Register a:visited{
-    color: rgb(0, 19, 2);
+    color: rgb(209, 186, 121);
+
 }
 
 .page-reg input{
@@ -279,13 +276,14 @@ footer{
 
 /*______Search______*/
 .search-content{
-    width: calc(100vw - nav width)
+    width: calc(100vw - 85px);
+    
 }
 
 figure a img{
     border: 3px solid rgb(14, 61, 24);
     border-radius: 20px;
-    max-width: 700px;
+    width: 100%;
     height: cover;
 }
 
@@ -298,22 +296,23 @@ figcaption{
     max-width: 500px;
     text-align: center;
 }
+
+#results.grid-view {
+    display: grid;
+    gap: 10px;
+}
 #results.grid-view div {
-    margin:50px;
+    margin:25px;
     border: 3px solid #88702f;
     background-color:#042209;
     border-radius: 2px 20px;
     padding: 10px;
     justify-content: center; 
 }
-#results.grid-view {
-    overflow: scroll;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-}
+
 #results.list-view div{
-    width: 95%;
+    /* width: 95%; */
+    max-width: 800px;
     border-bottom: 2px solid #88702f;
     box-shadow: 0 0 0.5px #4b3c14, 0px 0px 2px #c4a551;
 }
@@ -323,7 +322,7 @@ figcaption{
 }
 .search-container{
     padding: 20px;
-    width: 100%;
+    max-width: 800px;
 }
 #searchInput{
     max-width: 80%;
@@ -390,18 +389,22 @@ button:not(.previous,.next):hover{
                 transform: translateX(10px)  scale(1.1);
 }
 .note{
-                padding: 10px;
-                background-color: #a88b4b;
+    padding: 10px;
+    background-color: #a88b4b;
 }
 
 #hasMap{
     display:flex;
     justify-content: center;
 }
+iframe{
+    height: 420px;
+}
 #hasMap div{
     padding: 10px;
     border-radius: 16px;
     transition: transform 0.2s;
+    height: 50px;
 }
 #hasMap div:hover{
     transform: scale(1.4,1.4);
@@ -411,6 +414,19 @@ button:not(.previous,.next):hover{
 }
 
 /*______index_____*/
+.welcome{
+    border-radius: 2px 20px 2px 20px;
+    background-color: rgba(133, 97, 9, 0.2);
+    padding: 3px;
+}
+.welcome h1, .welcome p{
+    font-family: Calisto MT;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    color: #5c491a;
+}
+
 .imgSuggest{
     position: relative;
     text-align: center;
@@ -519,7 +535,6 @@ button:not(.previous,.next):hover{
             padding: 8px 15px;
             border-radius: 0px 20px;
             font-weight: bold;
-            /*border: 1px solid #173012;*/
             box-shadow: 0px 1px 3px rgb(23, 48, 18, 1);
             display: inline-block;
             white-space: nowrap;
@@ -787,17 +802,17 @@ audio {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 50px;
-    gap: 20px; /* بديل عن margin الفردي */
+    gap: 20px; 
 }
 
 .plGallery {
     display: flex;
-    flex-direction: column; /*elements of a single cell are organized vertically*/
+    flex-direction: column; 
     width: 250px;
     padding: 15px;
     background-color: #173012;
     border-radius: 2px 20px;
-    box-sizing: border-box; /* مهم عشان الـ padding ما يزيد العرض */
+    box-sizing: border-box;
 }
 
 .plGallery a img {
