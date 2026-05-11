@@ -222,7 +222,7 @@ nav , footer{
 }
 
 #results.grid-view{
-    border-radius = 16px; 
+    border-radius : 16px; 
 }
 #results{
     margin-bottom: 0.6rem;
