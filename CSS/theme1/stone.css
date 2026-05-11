@@ -426,6 +426,13 @@ nav , footer{
     transform: translateX(0);
 }
 
+#results.grid-view{
+    border-radius = 16px; 
+}
+#results{
+    margin-bottom: 0.6rem;
+}
+
 p:not(.contact-info p, header p, .galleryParent p, .suggestions p, .imgSuggest p){
     color: var(--shade);
     text-indent: 1em;
@@ -606,13 +613,4 @@ footer{
 
     transform: translateY(-1.5rem);
 }
-/*
-nav height: 16px(margin) + 1.5rem(font) + (padding)
-header height: 3rem(font h1) + 8px
 
-xx pillar top offset = 1.5+3 rem 16+8 px = 4.5rem + 24px
-
-footer height: 1.5rem*3 + 4rem(padding)
-
-media ratio: 1.1
-*/
