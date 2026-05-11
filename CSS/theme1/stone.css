@@ -28,215 +28,6 @@ header{
 }
 
 
-
-/*---------------------------------------------------- forms/ inputs ----------------------------*/
-.containsForms form{
-    width: clamp(20%, 410px, 100vw);
-    height: clamp(70%,40vh, 100vw);
-   
-    max-height: 80%;
-
-    font-size: 1.2em;
-    color:rgb(221, 228, 234);
-
-    border-radius: 16px;
-    backdrop-filter: blur(18px);
-    border: 2px solid var(--shade);
-    box-shadow: 0 0 10px var(--shade);
-
-    padding: 1.5rem;
-}
-
-.containsForms #themeBTN{font-size: 2rem;}
-.page-reg, .page-signIn{
-    display:flex ;
-    justify-content: center;
-    align-items: center;
-
-    min-height: calc(100vh - 32px - 2rem);
-}
-.page-reg h2{margin: 0.5rem 0 0 0; color: white}
-.contact-form{
-    font-size: 1.2em;
-    color:rgb(221, 228, 234);
-
-    border-radius: 16px;
-    backdrop-filter: blur(18px);
-    box-shadow: 0 0 5px var(--shade);
-    width: 50%;
-    min-width: 500px;
-    padding: 1.5rem;
-    margin: 1.5rem auto 3rem auto;
-}
-form h1{
-    text-align: center;
-}
-.input-login, .pag-reg{
-    position: relative;
-    text-align: center;
-    width: calc(100% - 1.5rem);
-    margin: 1.5rem 0 0 0;
-}
-.input-login input, textarea, #searchInput, .page-reg input{
-    font-size: 1em;
-    color: var(--shade);
-
-    width: 100%;
-    outline: none;
-    border: 2px solid var(--shade);
-    border-radius: 16px;
-
-    padding: 0.6rem;
-    transition: transform 0.2s;
-}
-.page-reg input{width: calc(100% - 1.5rem)}
-.gender-details{background-color: rgba(255, 234, 184, 0.5); border-radius: 16px;}
-.category{
-    font-size: 3rem;
-}
-.category label{
-    color: white;
-}
-
-.category input{
-    color: var(--shade);
-
-    width: 25%;
-    outline: none;
-    border: 2px solid var(--shade);
-}
-.selection{margin: 0.6rem 0;}
-select, option{
-    font-size: 0.7em;
-    width: 11rem;
-    color: var(--shade);
-    outline: none;
-    border: 2px solid var(--shade);
-    border-radius: 5px;
-
-    padding: 0.2rem;
-}
-option:checked{
-    background:var(--deepColor);
-}
-.input-login input:focus, .page-reg input:focus{       
-    transform: scaleY(1.1);
-    background-color: var(--deepColor);
-}
-#searchInput::selection{background: white;}
-textarea{
-    width: calc(100% - 1.5rem);
-    min-width: calc(100% - 1.5rem);
-    max-width: calc(100% - 1.5rem);
-    margin: 0.4rem 0 1.5rem 0;
-}
-.input-login i:hover{
-    color: var(--shade);
-}
-.input-login i{
-    font-size: 1.5em;
-
-    position: absolute;
-    right: 0;
-    top: 2.8rem;
-    transform: translateY(-50%);
-}
-.remember-me{
-    font-size: 1.1em;
-    display: flex;
-    justify-content: space-between;
-
-    margin: 1.5rem 1.5rem 1.5rem;
-}
-
-.remember-me label{
-    margin-right: 0.6rem;
-    cursor: pointer;
-}
-.remember-me input{
-    accent-color: var(--deepColor);
-    cursor: pointer;
-}
-
-#confirm{margin: 1.5rem;}
-
-.btn{
-    font-size: 1.1em;
-    font-weight: 600;
-
-    width: 100%;
-    height: 2em;
-
-    background-color: #f0f0f0;
-
-    outline: none;
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 0 5px var(--shade);
-
-    cursor:pointer;
-
-    transition: transform 0.2s , background-color 0.4s;
-}
-.btn:hover, .submit-btn:hover{
-    transform: translateY(-0.2em);
-    background-color: var(--deepColor);
-}
-.submit-btn{
-    font-size: 1.1em;
-    font-weight: 600;
-
-    width: 100%;
-    height: 2em;
-
-    background-color: #f0f0f0;
-
-    outline: none;
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 0 5px var(--shade);
-
-    cursor:pointer;
-
-    transition: transform 0.2s , background-color 0.4s;
-}
-#toggleButton, #pagination button{
-   font-size: 1em;
-   font-weight: 600;
-   background-color: #f0f0f0;
-
-    outline: none;
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 0 5px var(--shade);
-    margin: 0.6rem;
-    cursor:pointer;
-
-    transition: transform 0.2s , background-color 0.2s;
-}
-.search-container div{color: var(--shade); font-size: 1em;}
-figcaption{margin: 2rem;}
-#pagination button{display: inline; width: 2rem; color: var(--shade)}
-#toggleButton:hover, #pagination button:hover{transform: scale(1.001,1.001); background-color: var(--deepColor);}
-.page-login .Register{
-    font-size: 15px;
-    text-align: center;
-    margin: 20px 0 15px;
-    color: slateblue;
-}
-.Register{
-    text-align: center;
-}
-.Register a{
-    color: var(--deepColor);
-}
-/*end*/
-
-
-
-
-
-
 iframe{
     height: 50vh;
     border: none;
@@ -599,6 +390,209 @@ video {margin-bottom: 2.1rem;}
     right:calc(-50% + 30px);
     z-index:1;
 }
+
+/*---------------------------------------------------- forms/ inputs ----------------------------*/
+.containsForms form{
+    width: clamp(20%, 410px, 100vw);
+    height: clamp(70%,40vh, 100vw);
+   
+    max-height: 80%;
+
+    font-size: 1.2em;
+    color:rgb(221, 228, 234);
+
+    border-radius: 16px;
+    backdrop-filter: blur(18px);
+    border: 2px solid var(--shade);
+    box-shadow: 0 0 10px var(--shade);
+
+    padding: 1.5rem;
+}
+
+.containsForms #themeBTN{font-size: 2rem;}
+.page-reg, .page-signIn{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+
+    min-height: calc(100vh - 32px - 2rem);
+}
+.page-reg h2{margin: 0.5rem 0 0 0; color: white}
+.contact-form{
+    font-size: 1.2em;
+    color:rgb(221, 228, 234);
+
+    border-radius: 16px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 0 5px var(--shade);
+    width: 50%;
+    min-width: 500px;
+    padding: 1.5rem;
+    margin: 1.5rem auto 3rem auto;
+}
+form h1{
+    text-align: center;
+}
+.input-login, .pag-reg{
+    position: relative;
+    text-align: center;
+    width: calc(100% - 1.5rem);
+    margin: 1.5rem 0 0 0;
+}
+.input-login input, textarea, #searchInput, .page-reg input{
+    font-size: 1em;
+    color: var(--shade);
+
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--shade);
+    border-radius: 16px;
+
+    padding: 0.6rem;
+    transition: transform 0.2s;
+}
+.page-reg input{width: calc(100% - 1.5rem)}
+.gender-details{background-color: rgba(255, 234, 184, 0.5); border-radius: 16px;}
+.category{
+    font-size: 3rem;
+}
+.category label{
+    color: white;
+}
+
+.category input{
+    color: var(--shade);
+
+    width: 25%;
+    outline: none;
+    border: 2px solid var(--shade);
+}
+.selection{margin: 0.6rem 0;}
+select, option{
+    font-size: 0.7em;
+    width: 11rem;
+    color: var(--shade);
+    outline: none;
+    border: 2px solid var(--shade);
+    border-radius: 5px;
+
+    padding: 0.2rem;
+}
+option:checked{
+    background:var(--deepColor);
+}
+.input-login input:focus, .page-reg input:focus{       
+    transform: scaleY(1.1);
+    background-color: var(--deepColor);
+}
+#searchInput::selection{background: white;}
+textarea{
+    width: calc(100% - 1.5rem);
+    min-width: calc(100% - 1.5rem);
+    max-width: calc(100% - 1.5rem);
+    margin: 0.4rem 0 1.5rem 0;
+}
+.input-login i:hover{
+    color: var(--shade);
+}
+.input-login i{
+    font-size: 1.5em;
+
+    position: absolute;
+    right: 0;
+    top: 2.8rem;
+    transform: translateY(-50%);
+}
+.remember-me{
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 1.5rem 1.5rem 1.5rem;
+}
+
+.remember-me label{
+    margin-right: 0.6rem;
+    cursor: pointer;
+}
+.remember-me input{
+    accent-color: var(--deepColor);
+    cursor: pointer;
+}
+
+#confirm{margin: 1.5rem;}
+
+.btn{
+    font-size: 1.1em;
+    font-weight: 600;
+
+    width: 100%;
+    height: 2em;
+
+    background-color: #f0f0f0;
+
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 0 5px var(--shade);
+
+    cursor:pointer;
+
+    transition: transform 0.2s , background-color 0.4s;
+}
+.btn:hover, .submit-btn:hover{
+    transform: translateY(-0.2em);
+    background-color: var(--deepColor);
+}
+.submit-btn{
+    font-size: 1.1em;
+    font-weight: 600;
+
+    width: 100%;
+    height: 2em;
+
+    background-color: #f0f0f0;
+
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 0 5px var(--shade);
+
+    cursor:pointer;
+
+    transition: transform 0.2s , background-color 0.4s;
+}
+#toggleButton, #pagination button{
+   font-size: 1em;
+   font-weight: 600;
+   background-color: #f0f0f0;
+
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 0 5px var(--shade);
+    margin: 0.6rem;
+    cursor:pointer;
+
+    transition: transform 0.2s , background-color 0.2s;
+}
+.search-container div{color: var(--shade); font-size: 1em;}
+figcaption{margin: 2rem;}
+#pagination button{display: inline; width: 2rem; color: var(--shade)}
+#toggleButton:hover, #pagination button:hover{transform: scale(1.001,1.001); background-color: var(--deepColor);}
+.page-login .Register{
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+    color: slateblue;
+}
+.Register{
+    text-align: center;
+}
+.Register a{
+    color: var(--deepColor);
+}
+
 /*-----------------------------------------------------footer-------------------------------*/
 footer{
     text-align: center;
