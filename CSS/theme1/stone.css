@@ -5,7 +5,7 @@
     --shade: #4f443e;           /*brown*/
 }
 /*------------------------------------------------bodies-------------------------------*/
-body:not(.containsForms, #hasMap){
+body:not(.containsForms){
     font-size: 1.5rem;
     background-image: url("sky.jpg");
     background-size: cover;
@@ -29,7 +29,7 @@ header{
 
 
 
-/*---------------------------------------------------- forms ----------------------------*/
+/*---------------------------------------------------- forms/ inputs ----------------------------*/
 .containsForms form{
     width: clamp(20%, 410px, 100vw);
     height: clamp(70%,40vh, 100vw);
@@ -156,6 +156,7 @@ textarea{
     accent-color: var(--deepColor);
     cursor: pointer;
 }
+
 .btn{
     font-size: 1.1em;
     font-weight: 600;
