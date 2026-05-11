@@ -223,9 +223,10 @@ nav , footer{
 
 #results{
     margin-bottom: 0.6rem;
+}
+#results div{
     border-radius: 16px;
 }
-
 p:not(.contact-info p, header p, .galleryParent p, .suggestions p, .imgSuggest p){
     color: var(--shade);
     text-indent: 1em;
